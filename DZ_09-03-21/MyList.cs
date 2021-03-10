@@ -49,6 +49,10 @@ namespace DZ_09_03_21
 		{
 			get
 			{
+				if (this.arr.Length <= index)
+				{
+					throw new IndexOutOfRangeException();
+				}
 				return this.arr[index];
 			}
 			set
